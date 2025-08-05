@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#logo {
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  color: white;
+  font-family: "Faculty Glyphic", serif;
+  font-size: 2vw;
+}
+
+#name {
+  color: rgb(212, 43, 122);
+  font-size: 1.8em;
+}
+
+.subtitle {
+  color: aqua;
+  font-size: 1.2em;
+}
+
+#voice {
+  width: 130px;
+  display: none;
+}
+
+#btn {
+  width: 90%;
+  max-width: 400px;
+  background: linear-gradient(to right, rgb(21, 145, 207), rgb(209, 17, 164));
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1em;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 2px 2px 10px rgb(21, 145, 207), 2px 2px 10px rgb(209, 17, 164);
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#btn:hover {
+  box-shadow: 2px 2px 12px rgb(21, 145, 207), 2px 2px 12px rgb(209, 17, 164);
+  letter-spacing: 1px;
+}
+
+#mic {
+  width: 25px;
+}
+
+#battery-status {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+#note {
+  color: yellow;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6vw;
+  }
+  #btn {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    max-width: 280px;
+  }
+  #voice {
+    width: 100px;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  #btn {
+    width: 100%;
+    font-size: 0.9em;
+  }
+}
